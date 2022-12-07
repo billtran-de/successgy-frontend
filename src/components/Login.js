@@ -36,7 +36,7 @@ export function Login({ setToken }) {
   }
 
   return (
-    <div className="login">
+    <div className="login" style={{ marginTop: 100}}>
       <Typography.Text style={{color: "green", fontSize:36, fontWeight:'bold'}}>Successgy</Typography.Text>
       <form onSubmit={handleSubmit}>
         <label>
@@ -47,7 +47,7 @@ export function Login({ setToken }) {
           <p>Password</p>
           <input type="password" onChange={e => setPassword(e.target.value)}/>
         </label>
-        <div>
+        <div style={{ marginTop: 20}}>
           <button type="submit" onClick={onSubmit}>Log In</button>
         </div>
       </form>

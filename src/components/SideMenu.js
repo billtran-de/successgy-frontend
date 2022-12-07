@@ -15,7 +15,6 @@ export function SideMenu() {
         defaultSelectedKeys={[window.location.pathname]}
         defaultOpenKeys={["/data_entry"]}
         items={[
-          { label: 'CORE MODULES' },
           { label: 'Dashboard', key:"/", icon:<BarChartOutlined /> }, 
           { label: 'Data Entry', key:"/data_entry", icon:<FormOutlined />, children:
               [{ label: "Gas", key:"/data_entry/gas"},{ label: "Diesol", key:"/data_entry/diesol"},{ label: "Propane", key:"/data_entry/propane"},{ label: "Electricity", key:"/data_entry/electricity"}] }, 

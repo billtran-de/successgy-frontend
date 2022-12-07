@@ -1,6 +1,7 @@
-import { Table, Button, Form, DatePicker } from "antd"
+import { Table, Button, Form, DatePicker, Typography } from "antd"
 import Input from "antd/es/input/Input";
 import { useEffect, useState } from "react"
+import { File } from "./File";
 
 export function DataEntry(props) {
   const [emissionData, setEmissionData] = useState([]);
@@ -118,7 +119,10 @@ export function DataEntry(props) {
   }
   
   return (<div>
-    <h3>Data Entry for {props.source.charAt(0).toUpperCase() + props.source.slice(1)}</h3>
+    <Typography.Text style={{color: "green", fontSize:24, fontWeight:'bold'}}>
+      Data Entry for {props.source.charAt(0).toUpperCase() + props.source.slice(1)}
+    </Typography.Text>
+    <File />
     <header>
       <Form form={form} onFinish={onFinish}>
         <Table dataSource={data} columns={columns}></Table>

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Typography } from 'antd';
 import { Line } from 'react-chartjs-2';
 import { Chart as ChartJS, LineElement, CategoryScale, LinearScale, PointElement, Legend, Title } from 'chart.js';
 
@@ -119,7 +120,7 @@ export function Dashboard() {
     
   return (
     <>
-      <h1>Dashboard</h1>
+      <Typography.Text style={{color: "green", fontSize:24, fontWeight:'bold'}}>Dashboard</Typography.Text>
       <Snapshot />
       <div style={{width: "1000px", height: "1000px", marginLeft:"20px"}}>
         <Line data={data} options={options}></Line>
