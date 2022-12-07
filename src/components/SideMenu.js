@@ -19,7 +19,7 @@ export function SideMenu() {
           { label: 'Dashboard', key:"/", icon:<BarChartOutlined /> }, 
           { label: 'Data Entry', key:"/data_entry", icon:<FormOutlined />, children:
               [{ label: "Gas", key:"/data_entry/gas"},{ label: "Diesol", key:"/data_entry/diesol"},{ label: "Propane", key:"/data_entry/propane"},{ label: "Electricity", key:"/data_entry/electricity"}] }, 
-          { label: 'Data Reporting', key:"/data_reporting", icon:<DashboardOutlined /> }, 
+          { label: 'ESG Reporting', key:"/data_reporting", icon:<DashboardOutlined /> }, 
           { label: 'Data Audit', key:"/data_audit", icon:<CheckSquareOutlined /> }]}>
       </Menu>
     </div>

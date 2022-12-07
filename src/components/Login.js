@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../css/Login.css'
 import PropTypes from 'prop-types';
+import { Typography } from 'antd';
 
 // try log in to see if credentials match and return a token
 async function loginUser(credentials) {
@@ -36,7 +37,7 @@ export function Login({ setToken }) {
 
   return (
     <div className="login">
-      <h1>Please Log In</h1>
+      <Typography.Text style={{color: "green", fontSize:36, fontWeight:'bold'}}>Successgy</Typography.Text>
       <form onSubmit={handleSubmit}>
         <label>
           <p>Employee ID</p>
@@ -47,7 +48,7 @@ export function Login({ setToken }) {
           <input type="password" onChange={e => setPassword(e.target.value)}/>
         </label>
         <div>
-          <button type="submit" onClick={onSubmit}>Submit</button>
+          <button type="submit" onClick={onSubmit}>Log In</button>
         </div>
       </form>
     </div>
